@@ -1,0 +1,283 @@
+.main {
+    width: 100%;
+}
+
+.main-footer {
+    padding: 168px 165px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.main-footer-firstBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 560px;
+    border-radius: 8px;
+    background: #D87D4A;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-footer-firstBox .first-box-leftSide {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.main-footer-firstBox .first-box-leftSide .speaker-img, .main-footer-firstBox .first-box-leftSide .circle-img {
+    position: absolute;
+}
+
+.speaker-img {
+    bottom: 0px;
+    left: 70px;
+    z-index: 2;
+}
+
+.circle-img {
+    top: 0px;
+    left: -190px;
+    z-index: 1;
+}
+
+.main-footer-firstBox .first-box-rightSide {
+    width: 40%;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.main-footer-firstBox .first-box-rightSide h4 {
+    width: 260px;
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-footer-firstBox .first-box-rightSide p {
+    width: 349px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.66em;
+}
+
+.main-footer-secondtBox {
+    width: 100%;
+    min-height: 320px;
+    background: url(../../../public/assets/home/desktop/image-speaker-zx7.jpg) lightgray 0px 0px / 100% 100% no-repeat;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.main-footer-secondtBox .second-box-leftSide {
+    width: 40%;
+    padding-left: 62px;
+}
+
+.main-footer-secondtBox .second-box-leftSide .second-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-footer-secondtBox .second-box-leftSide .second-box-text,
+.main-footer-divideBox .rightSideBox .rightSideText span {
+    color: var(--black);
+    font-family: "Manrope";
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-footer-divideBox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-footer-divideBox .leftSideImg {
+    width: 100%;
+}
+
+.main-footer-divideBox .leftSideImg img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.main-footer-divideBox .rightSideBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--gray);
+}
+
+.main-footer-divideBox .rightSideBox .rightSideText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+@media (max-width: 1180px) {
+    .main-footer {
+        padding: 50px 39px 70px;
+        gap: 30px;
+    }
+    .main-footer-firstBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 720px;
+    }
+
+    .main-footer-firstBox .first-box-leftSide .speaker-img {
+        width: 255px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 26px;
+    }
+    .main-footer-firstBox .first-box-leftSide .circle-img {
+        min-width: 100%;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+    }
+    .main-footer .first-box-rightSide {
+        width: 100%;
+        padding: 0px;
+        padding-top: 296px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-footer .first-box-rightSide h4 {
+        text-align: center;
+    }
+    .main-footer .first-box-rightSide p {
+        text-align: center;
+    }
+}
+@media (max-width:890px) {
+    .main-footer-firstBox .first-box-leftSide .speaker-img {
+        width: 215px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 36px;
+    }
+    .main-footer-secondtBox {
+        min-height: 250px;
+    }
+}
+@media (max-width:792px) {
+    .main-footer-secondtBox .second-box-leftSide{
+        width: 50%; 
+        padding-left: 30px;
+    }
+    .main-footer-divideBox {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .main-footer-divideBox .rightSideBox{
+        padding-top: 41px ;
+        padding-left: 24px ;
+        padding-bottom: 41px;
+        justify-content: flex-start;
+    }
+    .main-footer-firstBox .first-box-leftSide .circle-img {
+        min-width: 100%;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width:640px) {
+    .main-footer {
+        padding: 61px 24px 35px;
+    }
+    .main-footer-firstBox{
+        min-height: 600px;
+    }
+    .main-footer-firstBox .first-box-leftSide .speaker-img {
+        width: 172px;
+        top: 55px;
+    }
+    .main-footer-firstBox .first-box-leftSide .circle-img{
+        flex-shrink: 0;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+    .main-footer .first-box-rightSide{
+        padding-bottom: 55px;
+    }
+    .main-footer-secondtBox {
+        background-image: url(../../../public/assets/home/mobile/image-speaker-zx7.jpg);
+        min-height: 520px;
+    }
+    .main-footer-secondtBox .second-box-leftSide{
+        width: 50%; 
+        flex-shrink: 0;
+    }
+    .main-footer-secondtBox .second-box-leftSide .second-box-text span{
+       flex-shrink: 0;
+    }
+    .main-footer-firstBox .first-box-rightSide h4 {
+        width: 200px;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 1.286px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:540px) {
+    .main-footer-secondtBox .second-box-leftSide{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    .main-footer-secondtBox .second-box-leftSide .second-box-text span{
+        width: 100%;
+     }
+}
+@media (max-width:440px) {
+    .main-footer {
+        padding: 85px 15px 35px;
+    }
+    .main-footer-secondtBox .second-box-leftSide{
+        padding-left: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .main-footer-secondtBox .second-box-leftSide .second-box-text {
+        gap: 16px;
+    }
+}

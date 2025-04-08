@@ -1,0 +1,143 @@
+.header-zone{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    background: var(--black);
+    padding: 35px 165px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-logo-zone{
+    min-width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: 0;
+}
+.header-nav-zone{
+    min-width: 50%;
+    max-width:60%;
+}
+.header-nav-zone ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 34px;
+}
+.header-nav-zone ul li a{
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-nav-zone ul li .active:hover{
+    color: #D87D4A;
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.header-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header-cart .sign-nav p a{
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration:dotted ;
+    cursor: pointer;
+}
+
+.header-cart-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.userIcon{
+    font-size: 22px;
+}
+@media (max-width:1180px) {
+    .header-zone{
+        padding: 32px 80px;
+    }
+    .category-header{
+        padding: 32px 80px;
+    }
+}
+
+@media (max-width:1080px) {
+    .header-nav-zone{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .header-zone{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 42px;
+        padding: 32px 40px;
+    }
+    .header-cart{
+        width: 70%;
+       display: flex;
+       justify-content: flex-end;
+    }
+}
+@media (min-width:1080px) {
+    .header-nav-zone{
+        display: flex;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media (max-width:640px) {
+    .header-zone{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 24px;
+        gap: 20px;
+    }
+    .header-cart-zone{
+        width: auto;
+    }
+}
+@media (max-width:480px) {
+    .header-zone{
+        padding: 24px;
+    }
+    .header-cart{
+        gap: 15px;
+    }
+}
+@media (max-width:360px){
+    .header-zone{
+        gap: 10px;
+    }
+    .header-cart{
+        gap: 10px;
+    }
+}

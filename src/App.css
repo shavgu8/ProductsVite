@@ -1,0 +1,9 @@
+.app{
+  display: flex;
+  justify-content: center;
+}
+.app h5{
+  font-family: 'Manrope';
+  color: var(--orange);
+  font-size: 108px;
+}

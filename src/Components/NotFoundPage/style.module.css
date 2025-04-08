@@ -1,0 +1,35 @@
+.notFound-zone{
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+}
+.notFound-text{
+    min-height: 776px;
+    background-image : url(../../../public/assets/page-not-found-error.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:580px) {
+    .notFound-zone{
+        height: 600px;
+    }
+    .notFound-text{
+        background-size: contain;
+        background-position:top;
+        background-position-y: 80px;
+    }
+}
+@media (min-height:1200px) {
+    .notFound-zone{
+        height: 100vh;
+    }
+    .notFound-text{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position:top;
+        background-position-y: 80px;
+    }
+}

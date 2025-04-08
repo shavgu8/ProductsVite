@@ -1,0 +1,65 @@
+.update-zone{
+    padding: 150px 0px 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+.alertWrapper{
+    position: absolute;
+    top: 41%;
+    width: 20%;
+}
+.update-zone form{
+    min-height: 400px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 6px;
+    padding: 35px;
+}
+.update-zone form .input-grid-zone{
+    padding-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    justify-content: space-between;
+    gap: 20px;
+}
+.update-zone form h5{
+    padding-top: 15px;
+    font-size: 22px;
+    font-family: "Manrope";
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.regButton-zone{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+@media (max-width:840px) {
+    .update-zone form{
+        width: 100%;
+        height: 100%;
+    }
+    .update-zone form .input-grid-zone{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-height:740px) {
+    .update-zone{
+        padding: 140px 0px 40px;
+    }
+}

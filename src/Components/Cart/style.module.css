@@ -1,0 +1,226 @@
+.active {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 92px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 32px 165px;
+    overflow: hidden;
+  }
+  .no-scroll {
+    overflow: hidden;
+}
+.scroll{
+    overflow: scroll;
+}
+  .none{
+    display: none;
+  }
+.cart-container{
+    background-color: #fff;
+    padding: 31px 31px 31px 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    min-width:316px;
+}
+.cart-containerHead{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-containerHead span{
+    color: var(--black);
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+}
+.cart-containerHead button{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.66em;
+    text-decoration-line: underline;
+}
+.cart-productsContainer{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.cart-productsContainer li{
+    padding-top:6px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-productsContainer li .cart-productDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+.cart-productsContainer li .cart-productDetails img{
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+.cart-productsContainer li .cart-productDetails .cart-item-price{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cart-productsContainer li .cart-productDetails .cart-item-price h6{
+    color: var(--black);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 700;
+    line-height:1.66em;
+    margin: 0;
+}
+.cart-productsContainer li .cart-productDetails .cart-item-price span{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 700;
+    line-height:25px;
+}
+.product-commonZone{
+    width: 34%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.product-commonZone .countZone{
+    width: 100%;
+    min-width: 96px;
+    height: 32px;
+    padding: 7px 11.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--gray);
+    background: var(--gray);
+}
+.product-commonZone .countZone input{
+    border: none;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    color: #000;
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: transparent;
+    overflow: hidden;
+}
+.product-commonZone .countZone span{
+    color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.product-commonZone .countZone .decrease, .product-commonZone .countZone .increase{
+    color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.product-commonZone .countZone .decrease:hover, .product-commonZone .countZone .increase:hover{
+    color: var(--orange);
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cart-totalPrice{
+    padding-top: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-totalPrice span{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height:1.66em;
+}
+.cart-totalPrice p{
+    color: var(--black);
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.cart-button{
+    width: 100%;
+}
+
+@media (max-width:1180px) {
+    .active{
+        top: 90px;
+        padding: 24px 40px;
+    }
+}
+
+@media (max-width:700px) {
+    .active{
+        width: 100%;
+        height: 100%;
+        padding:24px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .cart-container{
+        padding: 32px 29px 31px 28px;
+    }
+}
+@media (max-width:566px) {
+    .active{
+        padding:24px;
+    }
+    .cart-container{
+        padding:31px 18px;
+    }
+}
+
+@media (max-width:480px) {
+    .active{
+        top: 69px;
+    }
+
+}

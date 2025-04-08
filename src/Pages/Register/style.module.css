@@ -1,0 +1,82 @@
+.register-zone{
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+.alertWrapper{
+    position: absolute;
+    top: 33%;
+    min-width: 250px;
+}
+.logo-zone{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.logo-zone svg{
+    cursor: pointer;
+}
+
+.register-zone form{
+    min-height: 400px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 6px;
+    padding: 30px 35px;
+}
+
+.register-zone form .input-grid-zone{
+    padding-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    justify-content: space-between;
+    gap: 20px;
+}
+.register-zone form h5{
+    padding-top: 15px;
+    font-size: 22px;
+    font-family: "Manrope";
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.regButton-zone{
+    padding-top: 20px;
+}
+@media (max-width:840px) {
+    .register-zone form{
+        width: 100%;
+        height: 100%;
+    }
+    .register-zone form .input-grid-zone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:680px) {
+    .register-zone form{
+        padding: 25px 15px;
+    }
+    .alertWrapper{
+        padding:0px 50px;
+    }
+}
+@media (max-width:480px) {
+    .register-zone{
+        padding: 50px 24px;
+    }
+    .alertWrapper{
+        padding: 0px 24px;
+    }
+}

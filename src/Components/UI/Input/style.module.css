@@ -1,0 +1,174 @@
+.radioInput {
+    width: 100%;
+    max-width: 309px;
+    padding: 16px 21px 19px 21px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    background: var(--white);
+}
+.radioInput:checked{
+    border: 1px solid var(--orange);
+}
+
+.radioInput input {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.radioInput:has([type="radio"]:checked) {
+    accent-color: var(--orange);
+    border-radius: 8px;
+    border: 1px solid var(--orange);
+    background: var(--white);
+}
+
+.radioInput .radioLabel {
+    color: var(--black);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+.radioInput .errorRadioLabel{
+    color: #CD2C2C;
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.214px;
+}
+
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.labelWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    color: var(--black);
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.214px;
+}
+
+.input{
+    height: 56px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    background: var(--white);
+    text-transform: capitalize;
+}
+.input-100w{
+    width: 100%;
+    height: 56px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    background: var(--white);
+    text-transform: capitalize;
+}
+.signEmail, .signPass, .signAge, .signUsername, .signCountry,
+.signAddress, .signPhone, .signZip, .signCity
+{
+    min-width: 350px;
+    height: 56px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    background: var(--white);
+    text-transform: capitalize;
+}
+
+.input:focus,.input-100w:focus{
+    border-radius: 8px;
+    border: 1px solid var(--orange);
+    background: #FFF;
+}
+
+.inputError{
+    border-radius: 8px;
+    border: 2px solid #CD2C2C;
+    background: #FFF;
+    border-color: red; 
+}
+.isError{
+    color: #CD2C2C;
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.214px;
+}
+.labelError{
+    color: #CD2C2C;
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.214px;
+}
+.textError{
+    color: #CD2C2C;
+    text-align: right;
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.214px;
+}
+
+.input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+.input-100w::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width:540px) {
+    .input,.input-100w,.radioInput{
+        min-width: 350px;
+        max-width: 350px;
+    }
+}
+@media (max-width:445px) {
+    .input,.input-100w,.radioInput {
+        min-width: 250px;
+        max-width: 250px;
+    }
+    .signEmail, .signPass, .signAge, .signUsername, .signCountry,
+    .signAddress, .signPhone, .signZip, .signCity
+    {
+        min-width: 305px;
+    }
+}
+
+@media (max-width:360px) {
+    .signEmail, .signPass, .signAge, .signUsername, .signCountry,
+    .signAddress, .signPhone, .signZip, .signCity
+    {
+        min-width: 250px;
+    }
+}

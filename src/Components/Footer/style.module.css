@@ -1,0 +1,286 @@
+.footer{
+    width: 100%;
+}
+ul{margin: 0;}
+
+.info-zone{
+    padding: 160px 165px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.info-zone .info-zone-leftSide{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+}
+.info-zone .info-zone-leftSide h3{
+    max-width: 445px;
+    width: 100%;
+    color: var(--black);
+    font-family: "Manrope";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: 1.429px;
+    text-transform: uppercase;
+}
+.info-zone .info-zone-leftSide h3 .highlight{
+    color: #D87D4A;
+    font-family: "Manrope";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: 1.429px;
+    text-transform: uppercase;
+}
+.info-zone .info-zone-leftSide p{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.66em;
+}
+.info-zone .info-zone-rightSide{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.info-zone .info-zone-rightSide img{
+    flex-shrink: 0;
+}
+.info-zone .info-zone-rightSide .desktop-img{
+    display: block;
+}
+.info-zone-rightSide .tablet-img{
+    display: none;
+}
+.info-zone-rightSide .mobile-img{
+    display: none;
+}
+
+.footer-zone{
+    width: 100%;
+    padding: 75px 165px 48px;
+    background-color: var(--darkLight-black);
+}
+.upSideFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upSideFooter .footNavBar{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 34px;
+}
+.footNavBar li a{
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.footNavBar li .active:hover{
+    color: #D87D4A;
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.downSideFooter{
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+    position: relative;
+}
+.downSideFooter p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.66em;
+}
+.downSideFooter span{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.667em;
+    width: 530px;
+}
+
+.footSvgBar{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style-type: none;
+    cursor: pointer;
+    position: absolute;
+    top: 105px;
+    right: 0;
+}
+.footSvgBar :hover{
+    fill: #D87D4A;
+}
+
+@media (max-width:1180px) {
+    .info-zone{
+        width: 100%;
+        padding: 50px 39px 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-zone .info-zone-leftSide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        order: 2;
+    }
+    .info-zone .info-zone-leftSide h3{
+        text-align: center;
+    }
+    .info-zone .info-zone-leftSide p{
+        max-width: 740px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .info-zone .info-zone-rightSide{
+        display: flex;
+        width: 100%;
+    }
+    .info-zone .info-zone-rightSide .desktop-img{
+        display: none;
+    }
+    .info-zone .info-zone-rightSide .tablet-img{
+        display: block;
+        width: 100%;
+    }
+    .footer-zone .upSideFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .footer-zone .upSideFooter .footNavBar{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-zone .downSideFooter{
+        padding-top: 32px;
+        width: 100%;
+    }
+    .footer-zone .downSideFooter span{
+        width: 100%;
+    }
+    .footSvgBar{
+        position: static;
+    }
+    .inner-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-zone{
+        padding: 60px 39px 46px;
+   }
+}
+
+
+@media (max-width:640px) {
+    .info-zone{
+        padding: 61px 24px 96px;
+    }
+    .info-zone .info-zone-rightSide .tablet-img{
+        display: none;
+    }
+    .info-zone .info-zone-rightSide .mobile-img{
+        display: block;
+    }
+    .info-zone .info-zone-leftSide h3{
+        font-size: 28px;
+        letter-spacing: 1px;
+        width: 320px;
+    }
+    .info-zone .info-zone-leftSide p{
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 573px;
+    }
+    .info-zone .info-zone-leftSide h3 .highlight{
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width:540px) {
+    .footer-zone{
+        padding: 52px 24px 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
+    .footer-zone .upSideFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+    }
+    .footer-zone .upSideFooter .footNavBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .footer-zone .downSideFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .footer-zone .downSideFooter span{
+        text-align: center;
+    }
+    .footer-zone .downSideFooter .inner-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:48px ;
+    }
+    .info-zone .info-zone-leftSide p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:440px) {
+    .info-zone{
+        padding: 85px 15px 120px;
+    }
+}

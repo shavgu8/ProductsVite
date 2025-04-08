@@ -1,0 +1,40 @@
+.sign-zone{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    position: relative;
+}
+.alertWrapper{
+    position: absolute;
+    top: 42%;
+}
+.logo-zone{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-zone svg{
+    cursor: pointer;
+}
+.sign-zone form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 6px;
+    padding: 25px;
+    min-width: 22%;
+}
+.sign-zone form h5{
+    font-size: 22px;
+    font-family: "Manrope";
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 5px;
+}

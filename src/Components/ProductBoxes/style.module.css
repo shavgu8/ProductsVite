@@ -1,0 +1,104 @@
+.main-product-box{
+    padding: 200px 165px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--white);
+}
+.main-product-box .product-box{
+    border-radius: 8px;
+    background: var(--gray);
+    width: 100%;
+    height: 204px;
+    position: relative;
+}
+.product-box .product-box-details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.product-box .product-box-details .productImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 123px;
+    height: 160px; 
+    transform: translate(-50%,-100%);
+    display: block;
+}
+.product-box .product-box-details .productImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-box .product-box-details .thirdProductImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 123px;
+    height: 160px; 
+    transform: translate(-50%,-95%);
+    display: block;
+}
+.product-box .product-box-details .thirdProductImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-product-box p{
+    color: var(--black);
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+}
+.main-product-box span{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media (max-width:1180px) {
+    .main-product-box{
+        gap: 30px;
+    }
+    .main-product-box{
+        padding: 172px 39px 70px;
+    }
+}
+@media (max-width:892px) {
+    .main-product-box{
+        gap: 10px;
+    }
+}
+@media  (max-width:640px){
+    .main-product-box{
+        padding: 172px 24px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 68px;
+        width: 100%;
+    }
+    .main-product-box .product-box {
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    .main-product-box{
+        padding: 150px 15px 35px;
+    }
+}

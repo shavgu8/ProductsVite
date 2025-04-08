@@ -1,0 +1,125 @@
+.btn-link{
+    width: auto;
+    border: none;
+    padding: 15px 29.5px 15px 31.5px;
+    background: transparent;
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+}
+.btn-link:hover{
+    background: #4C4C4C;
+    border: transparent;
+}
+.btn-link2{
+    width: auto;
+    min-width: 140px;
+    border: none;
+    padding: 15px 29.5px 15px 31.5px;
+    background: transparent;
+    color: var(--black);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+}
+.btn-link2:hover{
+    background: var(--black);
+    color: var(--white);
+}
+.btn-primary{
+    width: auto;
+    border: none;
+    background: #D87D4A;
+    padding: 15px 29.5px 15px 31.5px;
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 48px;
+}
+.btn-primary:hover{
+    background: #FBAF85;
+}
+.categoryLink{
+    border: none;
+    color: rgba(0,0,0, 0.5);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.categoryLink:hover{
+    color: #D87D4A;
+}
+
+.btn-primary-100 {
+    width: 100%;
+    border: none;
+    background: #D87D4A;
+    padding: 15px 29.5px 15px 31.5px;
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn-primary-100:hover{
+    background: #FBAF85;
+}
+.btn-remove-link{
+    color: rgba(0,0,0, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration-line: underline;
+    border: none;
+    background-color: transparent;
+}
+.active{
+    display: block;
+    text-align: center;
+    background: #D87D4A;
+    padding: 15px 29.5px 15px 31.5px;
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.active:hover{
+    background: #FBAF85;
+}
+.active-gray{
+    color: rgba(0,0,0, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.66em;
+    border: none;
+    background-color: transparent;
+}
+.active-bold-gray{
+    color: rgba(0,0,0, 0.5);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.66em;
+    border: none;
+    background-color: transparent;
+}
+.active-bold-gray:hover{
+    text-decoration: underline;
+}
